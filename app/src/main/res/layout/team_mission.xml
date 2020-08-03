@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/ourTeamTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Our Team"
+            android:textColor="#000"
+            android:textSize="24dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/luffyPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:cardCornerRadius="40dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/zoroPhoto"
+            app:layout_constraintTop_toBottomOf="@id/ourTeamTitle">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/luffyphoto" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/zoroPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:cardCornerRadius="40dp"
+            app:layout_constraintLeft_toRightOf="@id/luffyPhoto"
+            app:layout_constraintRight_toLeftOf="@id/sanjiPhoto"
+            app:layout_constraintTop_toBottomOf="@id/ourTeamTitle">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/zorophoto" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/sanjiPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:cardCornerRadius="40dp"
+            app:layout_constraintLeft_toRightOf="@id/zoroPhoto"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ourTeamTitle">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/sanjiphoto" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/luffyName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Luffy"
+            android:textColor="#000"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/zoroName"
+            app:layout_constraintTop_toBottomOf="@id/luffyPhoto" />
+
+        <TextView
+            android:id="@+id/zoroName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:text="Zoro"
+            android:textColor="#000"
+            app:layout_constraintLeft_toRightOf="@id/luffyName"
+            app:layout_constraintRight_toLeftOf="@id/sanjiName"
+            app:layout_constraintTop_toBottomOf="@id/zoroPhoto" />
+
+        <TextView
+            android:id="@+id/sanjiName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sanji"
+            android:textColor="#000"
+            app:layout_constraintLeft_toRightOf="@id/zoroName"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sanjiPhoto" />
+
+        <TextView
+            android:id="@+id/luffyPosition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Captain"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/zoroPosition"
+            app:layout_constraintTop_toBottomOf="@id/luffyName" />
+
+        <TextView
+            android:id="@+id/zoroPosition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="1st Mate"
+            app:layout_constraintLeft_toRightOf="@id/luffyPosition"
+            app:layout_constraintRight_toLeftOf="@id/sanjiPosition"
+            app:layout_constraintTop_toBottomOf="@id/zoroName" />
+
+        <TextView
+            android:id="@+id/sanjiPosition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="Cook"
+            app:layout_constraintLeft_toRightOf="@id/zoroPosition"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sanjiName" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/nammiPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:cardCornerRadius="40dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/UsoppPhoto"
+            app:layout_constraintTop_toBottomOf="@id/luffyPosition">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/namiphoto" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/UsoppPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:cardCornerRadius="40dp"
+            app:layout_constraintLeft_toRightOf="@id/luffyPhoto"
+            app:layout_constraintRight_toLeftOf="@id/sanjiPhoto"
+            app:layout_constraintTop_toBottomOf="@id/zoroPosition">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/usoppphoto" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/chopperPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:cardCornerRadius="40dp"
+            app:layout_constraintLeft_toRightOf="@id/UsoppPhoto"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sanjiPosition">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/chopperphoto" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/NamiName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Nami"
+            android:textColor="#000"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/usoppName"
+            app:layout_constraintTop_toBottomOf="@id/nammiPhoto" />
+
+        <TextView
+            android:id="@+id/usoppName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Usopp"
+            android:textColor="#000"
+            app:layout_constraintLeft_toRightOf="@id/NamiName"
+            app:layout_constraintRight_toLeftOf="@id/chopperName"
+            app:layout_constraintTop_toBottomOf="@id/UsoppPhoto" />
+
+        <TextView
+            android:id="@+id/chopperName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Chopper"
+            android:textColor="#000"
+            app:layout_constraintLeft_toRightOf="@id/usoppName"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/chopperPhoto" />
+
+        <TextView
+            android:id="@+id/namiPosition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Navigator"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/zoroPosition"
+            app:layout_constraintTop_toBottomOf="@id/NamiName" />
+
+        <TextView
+            android:id="@+id/usoppPosition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:text="Gunner"
+            app:layout_constraintLeft_toRightOf="@id/namiPosition"
+            app:layout_constraintRight_toLeftOf="@id/chopperPosition"
+            app:layout_constraintTop_toBottomOf="@id/usoppName" />
+
+        <TextView
+            android:id="@+id/chopperPosition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="Doctor"
+            app:layout_constraintLeft_toRightOf="@id/usoppPosition"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/chopperName" />
+
+        <TextView
+            android:id="@+id/missionTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Mission"
+            android:textColor="#000"
+            android:textSize="24dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/usoppPosition" />
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/one_mission"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/missionTitle" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
